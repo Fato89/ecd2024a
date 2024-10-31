@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es"><head>
 
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.4.553">
@@ -8,7 +8,7 @@
 
 <meta name="author" content="Ariel Colina, Fausto Jácome">
 
-<title>TP_final</title>
+<title>Visualización de Información Trabajo Práctico Final</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -38,15 +38,32 @@ ul.task-list li input[type="checkbox"] {
 
 </head>
 
-<body class="fullcontent">
+<body>
 
 <div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
-
+<div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+  <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Tabla de contenidos</h2>
+   
+  <ul>
+  <li><a href="#introducción" id="toc-introducción" class="nav-link active" data-scroll-target="#introducción">Introducción</a></li>
+  <li><a href="#metadatos" id="toc-metadatos" class="nav-link" data-scroll-target="#metadatos">Metadatos</a></li>
+  <li><a href="#análisis-exploratorio-de-datos" id="toc-análisis-exploratorio-de-datos" class="nav-link" data-scroll-target="#análisis-exploratorio-de-datos">Análisis Exploratorio de Datos</a></li>
+  <li><a href="#preguntas-y-gráficos" id="toc-preguntas-y-gráficos" class="nav-link" data-scroll-target="#preguntas-y-gráficos">Preguntas y gráficos</a>
+  <ul class="collapse">
+  <li><a href="#existe-alguna-relación-entre-el-índice-de-refracción-y-la-gravedad-específica" id="toc-existe-alguna-relación-entre-el-índice-de-refracción-y-la-gravedad-específica" class="nav-link" data-scroll-target="#existe-alguna-relación-entre-el-índice-de-refracción-y-la-gravedad-específica">¿Existe alguna relación entre el índice de refracción y la gravedad específica?</a></li>
+  <li><a href="#los-diferentes-tipos-de-estructura-cristalina-influyen-en-el-índice-de-refracción" id="toc-los-diferentes-tipos-de-estructura-cristalina-influyen-en-el-índice-de-refracción" class="nav-link" data-scroll-target="#los-diferentes-tipos-de-estructura-cristalina-influyen-en-el-índice-de-refracción">¿Los diferentes tipos de estructura cristalina influyen en el índice de refracción?</a></li>
+  <li><a href="#la-cantidad-de-iones-de-agua-dentro-del-mineral-influye-en-la-escala-de-dureza" id="toc-la-cantidad-de-iones-de-agua-dentro-del-mineral-influye-en-la-escala-de-dureza" class="nav-link" data-scroll-target="#la-cantidad-de-iones-de-agua-dentro-del-mineral-influye-en-la-escala-de-dureza">¿La cantidad de iones de agua dentro del mineral influye en la escala de dureza?</a></li>
+  </ul></li>
+  <li><a href="#conclusiones" id="toc-conclusiones" class="nav-link" data-scroll-target="#conclusiones">Conclusiones</a></li>
+  </ul>
+</nav>
+</div>
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">TP_final</h1>
+<h1 class="title">Visualización de Información Trabajo Práctico Final</h1>
 </div>
 
 
@@ -54,7 +71,7 @@ ul.task-list li input[type="checkbox"] {
 <div class="quarto-title-meta">
 
     <div>
-    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-heading">Autor/a</div>
     <div class="quarto-title-meta-contents">
              <p>Ariel Colina, Fausto Jácome </p>
           </div>
@@ -93,6 +110,9 @@ ul.task-list li input[type="checkbox"] {
 <section id="análisis-exploratorio-de-datos" class="level1">
 <h1>Análisis Exploratorio de Datos</h1>
 <p>Algunas de las variables presentaban un valor 0 en lugar de un NA por lo que se decidió reemplazarlo por NA, estas variables son: estructura cristalina, dureza de Mohs, diafanidad, gravedad específica, propiedad óptica, dispersión, cantidad de átomos, masa y volumen molar y densidad.</p>
+<p>A continuación se muestran los gráficos de violín y su diagrama de caja para identificar su distribución y valores atípicos.</p>
+<p>En las medidas de gravedad específica, índice de refracción, dispersión, cantidad de iones de agua, cantidad de átomos, masa y volumen molar y densidad calculada tienen valores extremos, pero no corresponden a valores atípicos si no a valores propios de los minerales.</p>
+<p>Además, en las distribuciones se observan concentraciones de valores cercanos a cero en las propiedades: índice de refracción, cantidad de iones de agua, cantidad de átomos y volumen molar.</p>
 <div class="cell">
 <div class="cell-output cell-output-stdout">
 <pre><code>[[1]]</code></pre>
@@ -193,8 +213,11 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </div>
-<p># Preguntas y gráficos</p>
-<p>## ¿Existe alguna relación entre el índice de refracción y la gravedad específica?</p>
+</section>
+<section id="preguntas-y-gráficos" class="level1">
+<h1>Preguntas y gráficos</h1>
+<section id="existe-alguna-relación-entre-el-índice-de-refracción-y-la-gravedad-específica" class="level2">
+<h2 class="anchored" data-anchor-id="existe-alguna-relación-entre-el-índice-de-refracción-y-la-gravedad-específica">¿Existe alguna relación entre el índice de refracción y la gravedad específica?</h2>
 <p>Mediante el gráfico de dispersión se puede observar una correlación positiva entre el índice de refracción y la gravedad específica, es decir que a medida que aumenta el índice de refracción, también aumenta la gravedad específica.</p>
 <div class="cell">
 <div class="cell-output-display">
@@ -205,6 +228,7 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </div>
+</section>
 <section id="los-diferentes-tipos-de-estructura-cristalina-influyen-en-el-índice-de-refracción" class="level2">
 <h2 class="anchored" data-anchor-id="los-diferentes-tipos-de-estructura-cristalina-influyen-en-el-índice-de-refracción">¿Los diferentes tipos de estructura cristalina influyen en el índice de refracción?</h2>
 <p>Como se observa en el gráfico de violines, no se encuentran diferencias entre las medias de índice de refracción de los distintos tipos de estructura cristalina.</p>
@@ -295,12 +319,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // flash "checked"
     button.classList.add('code-copy-button-checked');
     var currentTitle = button.getAttribute("title");
-    button.setAttribute("title", "Copied!");
+    button.setAttribute("title", "Copiado");
     let tooltip;
     if (window.bootstrap) {
       button.setAttribute("data-bs-toggle", "tooltip");
       button.setAttribute("data-bs-placement", "left");
-      button.setAttribute("data-bs-title", "Copied!");
+      button.setAttribute("data-bs-title", "Copiado");
       tooltip = new bootstrap.Tooltip(button, 
         { trigger: "manual", 
           customClass: "code-copy-button-tooltip",
